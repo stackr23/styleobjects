@@ -123,7 +123,7 @@ nativeCSS.prototype.convert = function(cssFile) {
   var self = this,
     path = cssFile,
     css;
-    console.log('cssFile', cssFile)
+
   // PATH given
   if ((require('fs').existsSync(path))) {
     css = lib.readFile(path);

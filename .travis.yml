@@ -1,0 +1,15 @@
+language: node_js
+node_js: 9
+
+branches:
+  only:
+  - master
+  - development
+
+# before_install:
+#     - npm install -g WHATEVER
+
+install: npm install
+
+script:
+- npm run test

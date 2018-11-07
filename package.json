@@ -4,9 +4,12 @@
   "description": "transform style definitions in js objects\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[-\u001b[1;5C\u001b[C",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha ./test/*.spec.*"
   },
-  "directories": ["utils", "bin"],
+  "directories": [
+    "utils",
+    "bin"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stackr23/styleobjects.git"
@@ -28,7 +31,9 @@
   "devDependencies": {
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
-    "@babel/register": "^7.0.0"
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",

@@ -1,6 +1,7 @@
 # @stackr23/styleobjects
 > transform stylesheets to JS objects
 
+[![Build Status](https://travis-ci.com/stackr23/styleobjects.svg?branch=master)](https://travis-ci.com/stackr23/styleobjects)
 [![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v011)](http://npm.im/@stackr23/styleobjects)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
@@ -19,8 +20,8 @@ __@param input__&nbsp;&nbsp;&nbsp;- {`String:path` | `String` | `URL` | `Buffer`
 __@param outout__&nbsp;- {`String:path`}
 
 ## BETA
-> __like:__ BETA don't use it in production
+> like "BETA don't use it in production!"
 
 ## inspiration
-* [https://github.com/raphamorim/native-css](https://github.com/raphamorim/native-css)  
+* [nativeCSS](https://github.com/raphamorim/native-css)  
 * [css-objects-loader](https://github.com/pl12133/css-object-loader)
