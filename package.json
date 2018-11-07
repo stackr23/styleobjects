@@ -1,0 +1,27 @@
+{
+  "name": "styleobjects",
+  "version": "1.0.0",
+  "description": "transform style definitions in js objects\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[-\u001b[1;5C\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackr23/styleobjects.git"
+  },
+  "keywords": [
+    "style",
+    "cssobjects",
+    "cssmodules",
+    "jsstyle",
+    "reactstyle",
+    "domstyle"
+  ],
+  "author": "Stefan Friedl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stackr23/styleobjects/issues"
+  },
+  "homepage": "https://github.com/stackr23/styleobjects#readme"
+}
