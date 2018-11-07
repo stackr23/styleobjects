@@ -1,0 +1,71 @@
+{
+  "_from": "native-css",
+  "_id": "native-css@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-VWgaEhKLAaZTiscJfzYFOE+8Fos=",
+  "_location": "/native-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "native-css",
+    "name": "native-css",
+    "escapedName": "native-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/native-css/-/native-css-2.0.0.tgz",
+  "_shasum": "55681a12128b01a6538ac7097f3605384fbc168b",
+  "_spec": "native-css",
+  "_where": "C:\\xampp\\htdocs\\projects\\styleobjects",
+  "author": {
+    "name": "Raphael Amorim"
+  },
+  "bin": {
+    "native-css": "./bin/native-css.js"
+  },
+  "bugs": {
+    "url": "https://github.com/raphamorim/native-css/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "css": "2.2.1",
+    "fetch": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "Convert pure CSS to javascript literal objects or React Style",
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "engines": {
+    "node": ">=0.12.18"
+  },
+  "homepage": "https://github.com/raphamorim/native-css",
+  "keywords": [
+    "react",
+    "css",
+    "react",
+    "native",
+    "convert"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "native-css",
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphamorim/native-css.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "version": "2.0.0"
+}
