@@ -34,13 +34,13 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "css": "2.2.1",
+    "css": "2.2.4",
     "fetch": "^1.0.1"
   },
   "deprecated": false,
   "description": "Convert pure CSS to javascript literal objects or React Style",
   "devDependencies": {
-    "mocha": "^2.2.1"
+    "mocha": "^5.2.0"
   },
   "directories": {
     "doc": "docs"

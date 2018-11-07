@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - development
+  - /^greenkeeper/.*$/
 
 # before_install:
 #     - npm install -g WHATEVER

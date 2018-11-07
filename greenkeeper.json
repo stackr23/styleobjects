@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "bin/native-css/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
