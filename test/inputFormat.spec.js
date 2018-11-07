@@ -4,17 +4,16 @@
 //
 // import assert       from 'assert'
 // import nativeCSS    from '../bin/native-css/src/native-css.js'
-// import lib          from '../bin/native-css/lib/index.js'
-let assert    = require('assert'),
-    nativeCSS = require('../bin/native-css/src/native-css.js'),
-    lib       = require('../bin/native-css/lib/index.js')
+let fs        = require('fs'),
+    assert    = require('assert'),
+    nativeCSS = require('../bin/native-css/src/native-css.js')
 
 describe('Input Formats', function () {
     context('Accept String', function () {
         it('should get a object without any error', done => {
 
             let filename    = 'test/fixtures/sample.css',
-                string      = lib.readFile(filename),
+                string      = fs.readFileSync(filename, 'utf-8'),
                 result      = nativeCSS.convert(string)
 
             assert.equal(typeof result, 'object')
@@ -39,7 +38,7 @@ describe('Input Formats', function () {
         it('should get a object without any error', done => {
 
             let filename    = 'test/fixtures/sample.css',
-                string      = lib.readFile(filename),
+                string      = fs.readFileSync(filename, 'utf-8'),
                 buffer      = new Buffer(string),
                 result      = nativeCSS.convert(buffer)
 

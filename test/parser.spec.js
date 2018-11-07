@@ -1,7 +1,6 @@
 let assert    = require('assert'),
     expect    = require('chai').expect,
-    nativeCSS = require('../bin/native-css/src/native-css.js'),
-    lib       = require('../bin/native-css/lib/index.js')
+    nativeCSS = require('../bin/native-css/src/native-css.js')
 
 describe('Parser', function() {
     context('Valid CSS (only classes)', function() {

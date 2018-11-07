@@ -1,19 +1,14 @@
 'use strict'
 
-var packageJson = require('../package.json'),
-  lib = require('../lib'),
-  cssParser = require('css'),
-  // TBD: refactor: remove dependecy "fetch"
-  fetchUrl = require('fetch').fetchUrl
+var fs          = require('fs'),
+    cssParser   = require('css'),
+    // TBD: refactor: remove dependecy "fetch"
+    fetchUrl    = require('fetch').fetchUrl
 
 var nativeCSS = function() {}
 
-nativeCSS.prototype.version = function() {
-  return ('native-css version: ' + packageJson.version)
-}
-
 nativeCSS.prototype.help = function() {
-  return lib.readFile(__dirname + '/../docs/help.md')
+  return fs.readFileSync(__dirname + '/../docs/help.md', 'utf-8')
 }
 
 nativeCSS.prototype.indentObject = function(obj, indent) {
@@ -46,7 +41,11 @@ function transformRules(self, rules, result) {
     } else if (rule.type === 'rule') {
       rule.declarations.forEach(function(declaration) {
         if (declaration.type === 'declaration') {
-          var cssProperty = lib.camelize(declaration.property)
+          // camelize
+          var cssProperty = declaration.property
+            .replace(/-([a-z])/g, function (g) {
+              return g[1].toUpperCase()
+            })
           obj[cssProperty] = declaration.value
         }
       })
@@ -94,7 +93,7 @@ nativeCSS.prototype.convertAsync = function(cssFile) {
   return new Promise(function(resolve, reject) {
     if (!self.isUrl(cssFile)) {
       if ((require('fs').existsSync(path))) {
-        var css = lib.readFile(path)
+        var css = fs.readFileSync(path, 'utf-8')
         css = cssParser.parse(css, {
           silent: false,
           source: path
@@ -126,7 +125,7 @@ nativeCSS.prototype.convert = function(cssFile) {
 
   // PATH given
   if ((require('fs').existsSync(path))) {
-    css = lib.readFile(path)
+    css = fs.readFileSync(path, 'utf-8')
   }
   // STRING given
   else if (typeof cssFile === 'string') {
@@ -166,9 +165,9 @@ nativeCSS.prototype.generateFile = function(obj, where, react) {
     body
 
   if (react) {
-    lib.writeFile(where, 'var styles = StyleSheet.create({\n')
+    fs.writeFileSync(where, 'var styles = StyleSheet.create({\n')
     body = self.indentObject(obj, 2)
-    lib.appendFile(where, body + '\n})')
+    fs.appendFileSync(where, body + '\n})')
     return
   }
 
@@ -176,7 +175,7 @@ nativeCSS.prototype.generateFile = function(obj, where, react) {
     'styles': obj
   }, 2)
 
-  lib.writeFile(where, body)
+  fs.writeFileSync(where, body)
 }
 
 module.exports = new nativeCSS()
