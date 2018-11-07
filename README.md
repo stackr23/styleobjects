@@ -10,7 +10,7 @@
 [maintenance-url]: https://GitHub.com/stackR23/styleobjects/graphs/
 [pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 
-## usage
+## CLI usage
 ```javascript
 npm install -g @stackr23/styleobjects
 npx @stackr/styleobjects --input SRC --output DEST
@@ -18,9 +18,6 @@ npx @stackr/styleobjects --input SRC --output DEST
 
 __@param input__&nbsp;&nbsp;&nbsp;- {`String:path` | `String` | `URL` | `Buffer`} - __required__  
 __@param outout__&nbsp;- {`String:path`}
-
-## BETA
-> like "BETA don't use it in production!"
 
 ## inspiration
 * [nativeCSS](https://github.com/raphamorim/native-css)  
