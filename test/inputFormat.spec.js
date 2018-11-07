@@ -2,6 +2,9 @@
 // const expect1 = {'backgroundColor': '#111', 'color': '#000'}
 // usw, ...
 //
+// import assert       from 'assert'
+// import nativeCSS    from '../bin/native-css/src/native-css.js'
+// import lib          from '../bin/native-css/lib/index.js'
 let assert    = require('assert'),
     nativeCSS = require('../bin/native-css/src/native-css.js'),
     lib       = require('../bin/native-css/lib/index.js')
@@ -105,6 +108,29 @@ describe('Input Formats', function () {
                     assert.deepEqual(err, null)
                     done()
                 })
+        })
+    })
+//     __________  ____  ____  ____     __  _____    _   ______  __    _____   ________
+//    / ____/ __ \/ __ \/ __ \/ __ \   / / / /   |  / | / / __ \/ /   /  _/ | / / ____/
+//   / __/ / /_/ / /_/ / / / / /_/ /  / /_/ / /| | /  |/ / / / / /    / //  |/ / / __
+//  / /___/ _, _/ _, _/ /_/ / _, _/  / __  / ___ |/ /|  / /_/ / /____/ // /|  / /_/ /
+// /_____/_/ |_/_/ |_|\____/_/ |_|  /_/ /_/_/  |_/_/ |_/_____/_____/___/_/ |_/\____/
+    context('Error Handling', function() {
+        it('should return ERROR if src is undefined', done => {
+            let returnValue = nativeCSS.convert()
+
+            assert.equal(typeof returnValue, 'string');
+            assert.equal(returnValue, 'Ooops!\nError: CSS file not found!')
+
+            done()
+        })
+        it('should return ERROR if path is not found', done => {
+            let returnValue = nativeCSS.convert('/var/www/htdocs/dirThatDoesntExist')
+
+            assert.equal(typeof returnValue, 'string');
+            assert.equal(returnValue, 'Ooops!\nError: CSS file not found!')
+
+            done()
         })
     })
 })
