@@ -13,7 +13,7 @@ import fs               from 'fs'
 import cssParser        from 'css'
 import {fetchUrl}       from 'fetch'
 
-import transformRules   from './transformRules'
+import transformRules   from './lib/transformRules'
 
 class styleObjects {
 
