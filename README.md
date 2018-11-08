@@ -19,6 +19,9 @@ npx @stackr/styleobjects --input SRC --output DEST
 __@param input__&nbsp;&nbsp;&nbsp;- {`String:path` | `String` | `URL` | `Buffer`} - __required__  
 __@param outout__&nbsp;- {`String:path`}
 
+## webpack usage
+[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)
+
 ## inspiration
 * [nativeCSS](https://github.com/raphamorim/native-css)  
 * [css-objects-loader](https://github.com/pl12133/css-object-loader)
