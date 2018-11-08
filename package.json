@@ -4,7 +4,7 @@
   "description": "transform style definitions in js objects\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[-\u001b[1;5C\u001b[C",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/*.spec.*"
+    "test": "mocha ./test/*.spec.* --require @babel/register"
   },
   "directories": [
     "utils",

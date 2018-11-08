@@ -40,19 +40,19 @@ __--outout__&nbsp;- {`String:path`}
 > __[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)__
 
 ## v1 roadmap  
-* [x] handle subclasses recursively  
+* [x] refactor core
+    * [ ] handle subclasses recursively  
+    * [ ] use [humps](https://www.npmjs.com/package/humps) for camelization  
+    * [ ] ES7
+        * [x] use ES7 in /src and /bin
+        * [x] @babel/register
+        * [ ] build into /dist
 * [x] mocha tests 
+    * [ ] add more tests
 * [ ] proper option handling
     * [x] add yargs
-    * [ ] output as json 
-    * [ ] output as module
-    * [ ] output as echo
-* [ ] remove nativeCSS  
-* [ ] use [humps](https://www.npmjs.com/package/humps) for camelization  
+    * [ ] output as (json | module | echo)
 * [ ] DocBlocks // Comments  
-* [ ] ES7
-    * [x] @babel/register
-    * [ ] build into /dist
 
 ## inspiration
 * [nativeCSS](https://github.com/raphamorim/native-css)  
