@@ -39,7 +39,7 @@ __--outout__&nbsp;- {`String:path`}
 ## webpack usage
 > __[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)__
 
-## v1 roadmap  
+## v2 roadmap  
 * add eslint
 * [ ] refactor core
     * [ ] handle subclasses recursively  
