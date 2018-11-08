@@ -10,17 +10,49 @@
 [maintenance-url]: https://GitHub.com/stackR23/styleobjects/graphs/
 [pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 
-## CLI usage
-```javascript
-npm install -g @stackr23/styleobjects
-npx @stackr/styleobjects --input SRC --output DEST
+__style.css__
+```css
+.test   { font-size: 20px; }
+.test23 { padding-top: 5px; }
+.test23 .testInner { font-decoration: none; }
 ```
 
-__@param input__&nbsp;&nbsp;&nbsp;- {`String:path` | `String` | `URL` | `Buffer`} - __required__  
-__@param outout__&nbsp;- {`String:path`}
+__output.js__
+```javascript
+{
+    test:   {'fontSize': '20px'},
+    test23: {'fontSize': '23px'},
+    test23__testInner: {'fontDecoration': 'none'}
+}
+```
+
+## CLI usage
+
+```bash
+npm install -g @stackr23/styleobjects  
+npx @stackr/styleobjects --input ./style.css --output ./output.js
+```
+
+__--input__&nbsp;&nbsp;&nbsp;- {`String:path` | `String` | `URL` | `Buffer`} - __required__  
+__--outout__&nbsp;- {`String:path`}
 
 ## webpack usage
-[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)
+> __[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)__
+
+## v1 roadmap  
+* [x] handle subclasses recursively  
+* [x] mocha tests 
+* [ ] proper option handling
+    * [x] add yargs
+    * [ ] output as json 
+    * [ ] output as module
+    * [ ] output as echo
+* [ ] remove nativeCSS  
+* [ ] use [humps](https://www.npmjs.com/package/humps) for camelization  
+* [ ] DocBlocks // Comments  
+* [ ] ES7
+    * [x] @babel/register
+    * [ ] build into /dist
 
 ## inspiration
 * [nativeCSS](https://github.com/raphamorim/native-css)  
