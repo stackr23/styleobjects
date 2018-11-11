@@ -2,7 +2,7 @@
 > transform stylesheets to JS objects
 
 [![Build Status](https://travis-ci.com/stackr23/styleobjects.svg?branch=master)](https://travis-ci.com/stackr23/styleobjects)
-[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v011)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v020)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 
@@ -39,8 +39,8 @@ __--outout__&nbsp;- {`String:path`}
 ## webpack usage
 > __[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)__
 
-## v1 roadmap  
-* add eslint
+## v2 roadmap  
+* [ ] add eslint
 * [ ] refactor core
     * [ ] handle subclasses recursively  
         * [x] transformToNestedDomStyleObjects() - recursively

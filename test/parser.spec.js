@@ -1,6 +1,6 @@
 let assert    = require('assert'),
     expect    = require('chai').expect,
-    nativeCSS = require('../src/indexBabelRegister.js')
+    nativeCSS = require('../dist/index.js').default
 
 describe('Parser', function() {
     context('Valid CSS (only classes)', function() {

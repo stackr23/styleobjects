@@ -1,5 +1,5 @@
-// /bin/index.js
-//
-// enables calls/includes to /styleobjects/bin
-// TBD: include dist
+'use strict'
+
+require('../utils/babelRegister.js')
+
 require('./styleobjects.js')

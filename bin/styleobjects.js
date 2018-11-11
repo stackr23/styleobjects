@@ -1,7 +1,7 @@
 'use strict'
 
 import path             from 'path'
-import nativeCSS        from '../src'
+import nativeCSS        from '../dist'
 import logger           from '../utils/log'
 
 const ROOT              = path.resolve(path.join(__dirname, '..'))

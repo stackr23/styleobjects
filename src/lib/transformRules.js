@@ -1,4 +1,4 @@
-export default function transformRules(self, rules, result) {
+export default function transformRules (self, rules, result) {
   rules.forEach(function(rule) {
     var obj = {}
     if (rule.type === 'media') {

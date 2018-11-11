@@ -1,4 +1,5 @@
 'use strict'
+//
 //    _____________  ____    __________  ____      _________________________
 //   / ___/_  __/\ \/ / /   / ____/ __ \/ __ )    / / ____/ ____/_  __/ ___/
 //   \__ \ / /    \  / /   / __/ / / / / __  |_  / / __/ / /     / /  \__ \
@@ -6,14 +7,14 @@
 // /____//_/     /_/_____/_____/\____/_____/\____/_____/\____/ /_/  /____/
 //
 //  special thanks to Raphael Amorim (@raphamorim) for the core concept,
-//  as this is basicly a remake of nativeCSS (https://github.com/raphamorim/native-css)
+//  because this is basicly a remake of nativeCSS (https://github.com/raphamorim/native-css)
 //
 
 import fs               from 'fs'
 import cssParser        from 'css'
 import {fetchUrl}       from 'fetch'
 
-import transformRules   from './lib/transformRules'
+import transformRules   from './lib/transformRules.js'
 
 class styleObjects {
 

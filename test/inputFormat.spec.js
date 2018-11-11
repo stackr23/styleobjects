@@ -6,7 +6,7 @@
 // import nativeCSS    from '../bin/native-css/src/native-css.js'
 let fs        = require('fs'),
     assert    = require('assert'),
-    nativeCSS = require('../src/indexBabelRegister.js')
+    nativeCSS = require('../dist/index.js').default
 
 describe('Input Formats', function () {
     context('Accept String', function () {
