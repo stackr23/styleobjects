@@ -2,7 +2,7 @@
 > transform stylesheets to JS objects
 
 [![Build Status](https://travis-ci.com/stackr23/styleobjects.svg?branch=master)](https://travis-ci.com/stackr23/styleobjects)
-[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v020)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v132)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 
