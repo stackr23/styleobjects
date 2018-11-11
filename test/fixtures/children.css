@@ -1,0 +1,11 @@
+.foo .bar {
+    font-size: 3rem;
+}
+
+    .foo .bar .x {
+        font-size: 2rem;
+    }
+
+        .foo .bar .x .y {
+            font-size: 1rem;
+        }

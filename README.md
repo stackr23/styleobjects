@@ -2,7 +2,7 @@
 > transform stylesheets to JS objects
 
 [![Build Status](https://travis-ci.com/stackr23/styleobjects.svg?branch=master)](https://travis-ci.com/stackr23/styleobjects)
-[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v132)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/%40stackr23%2Fstyleobjects.svg?v140)](http://npm.im/@stackr23/styleobjects) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/styleobjects.svg)](https://greenkeeper.io/)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 
@@ -21,8 +21,10 @@ __output.js__
 ```javascript
 {
     test:   {'fontSize': '20px'},
-    test23: {'fontSize': '23px'},
-    test23__testInner: {'fontDecoration': 'none'}
+    test23: {
+        'fontSize': '23px',
+        testInner: {'fontDecoration': 'none'}
+    }
 }
 ```
 
@@ -41,20 +43,19 @@ __--outout__&nbsp;- {`String:path`}
 
 ## v2 roadmap  
 * [ ] ? add eslint
-* [ ] refactor core
-    * [ ] handle subclasses recursively  
-        * [x] transformToNestedDomStyleObjects() - recursively
-    * [ ] use [humps](https://www.npmjs.com/package/humps) for camelization  
+* [x] refactor core
+    * [x] handle subclasses recursively  
+    * [ ] issue #3
     * [x] ES7
         * [x] @babel/register
         * [x] build into /dist
+        * [ ] refactor build process (rollup? backpack?)
 * [x] mocha tests 
     * [x] unit tests 
     * [x] test /bin
 * [ ] proper option handling
     * [x] add yargs
     * [ ] --output-type as (json | module | echo)
-* [ ] DocBlocks // Comments  
 
 ## inspiration
 * [nativeCSS](https://github.com/raphamorim/native-css)  

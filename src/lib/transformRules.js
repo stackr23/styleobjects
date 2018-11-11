@@ -1,3 +1,4 @@
+// TBD: refactor: IO model (remove result-arg and self ref)
 export default function transformRules (self, rules, result) {
   rules.forEach(function(rule) {
     var obj = {}

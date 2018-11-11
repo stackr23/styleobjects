@@ -1,6 +1,6 @@
 {
   "name": "@stackr23/styleobjects",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "transform style definitions in js objects",
   "main": "dist/index.js",
   "scripts": {
