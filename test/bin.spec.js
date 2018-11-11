@@ -26,7 +26,7 @@ describe('[BIN]', () => {
         })
 
         it('should demand option --input', () => {
-            expect(_stderr).to.contain('Fehlendes Argument: input')
+            expect(_stderr).to.contain('Missing required argument: input')
         })
     })
 

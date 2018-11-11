@@ -11,6 +11,7 @@ const setFileExt = (basename, ext = 'js') =>
     basename.split('.').shift() + '.' + ext
 
 const yargs             = require('yargs')
+    .locale('en-us') // TBD: set locale just for process.env.CONTINOUS_INTEGRATION
     .help('h')
     .option('version',  {alias: 'v'})
     .option('input',    {alias: 'i'/* , type: 'string' */})
