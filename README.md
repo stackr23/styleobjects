@@ -40,15 +40,14 @@ __--outout__&nbsp;- {`String:path`}
 > __[@stackr/styleobjects-loader](https://github.com/stackr23/styleobjects-loader)__
 
 ## v2 roadmap  
-* [ ] add eslint
+* [ ] ? add eslint
 * [ ] refactor core
     * [ ] handle subclasses recursively  
         * [x] transformToNestedDomStyleObjects() - recursively
     * [ ] use [humps](https://www.npmjs.com/package/humps) for camelization  
-    * [ ] ES7
-        * [x] use ES7 in /src and /bin
+    * [x] ES7
         * [x] @babel/register
-        * [ ] build into /dist
+        * [x] build into /dist
 * [x] mocha tests 
     * [ ] add more tests
 * [ ] proper option handling

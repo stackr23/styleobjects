@@ -1,0 +1,10 @@
+test
+src
+.travis.yml
+.eslintrc
+.babelrc
+.editorconfig
+.gitignore
+.npmignore
+build.sh
+node_modules
