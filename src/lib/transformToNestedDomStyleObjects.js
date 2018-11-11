@@ -39,7 +39,7 @@ var injectSubClasses = function injectSubClasses (_object) {
       var parentkey = keySplit[0]
       var newKey = keySplit.slice(1).join('__')
 
-      object[parentkey] = object[parentkey] || {}
+      object[parentkey]         = object[parentkey] || {}
       object[parentkey][newKey] = object[key]
 
       if (~newKey.indexOf('__')) {

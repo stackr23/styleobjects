@@ -12,7 +12,7 @@ describe('[Input Formats]', function () {
     context('Accept String', function () {
         it('should get a object without any error', done => {
 
-            let filename    = 'test/fixtures/sample.css',
+            let filename    = 'test/fixtures/basic.css',
                 string      = fs.readFileSync(filename, 'utf-8'),
                 result      = nativeCSS.convert(string)
 
@@ -37,7 +37,7 @@ describe('[Input Formats]', function () {
     context('Accept Buffer', function () {
         it('should get a object without any error', done => {
 
-            let filename    = 'test/fixtures/sample.css',
+            let filename    = 'test/fixtures/basic.css',
                 string      = fs.readFileSync(filename, 'utf-8'),
                 buffer      = new Buffer(string),
                 result      = nativeCSS.convert(buffer)
@@ -62,7 +62,7 @@ describe('[Input Formats]', function () {
     context('Accept Path', function () {
         it('should get a object without any error', done => {
 
-            let fixture     = 'test/fixtures/sample.css',
+            let fixture     = 'test/fixtures/basic.css',
                 result      = nativeCSS.convert(fixture)
 
             assert.equal(typeof result, 'object')
@@ -124,7 +124,7 @@ describe('[Input Formats]', function () {
             done()
         })
         it('should return ERROR if path is not found', done => {
-            let returnValue = nativeCSS.convert('/var/www/htdocs/dirThatDoesntExist')
+            let returnValue = nativeCSS.convert('/var/www/htdocs/dirThatDoesntExist/index.js')
 
             assert.equal(typeof returnValue, 'string');
             assert.equal(returnValue, 'Ooops!\nError: CSS file not found!')

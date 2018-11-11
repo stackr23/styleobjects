@@ -10,11 +10,12 @@
 //  because this is basicly a remake of nativeCSS (https://github.com/raphamorim/native-css)
 //
 
-import fs               from 'fs'
-import cssParser        from 'css'
-import {fetchUrl}       from 'fetch'
+import fs                               from 'fs'
+import cssParser                        from 'css'
+import {fetchUrl}                       from 'fetch'
 
-import transformRules   from './lib/transformRules.js'
+import transformRules                   from './lib/transformRules.js'
+import transformToNestedDomStyleObjects from './lib/transformToNestedDomStyleObjects.js'
 
 class styleObjects {
 
@@ -37,8 +38,10 @@ class styleObjects {
     }
 
     transform (css) {
-      var result = {}
+      var result    = {}
       transformRules(this, css.stylesheet.rules, result)
+      result        = transformToNestedDomStyleObjects(result)
+
       return result
     }
 
