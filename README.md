@@ -49,10 +49,11 @@ __--outout__&nbsp;- {`String:path`}
         * [x] @babel/register
         * [x] build into /dist
 * [x] mocha tests 
-    * [ ] add more tests
+    * [x] unit tests 
+    * [x] test /bin
 * [ ] proper option handling
     * [x] add yargs
-    * [ ] output as (json | module | echo)
+    * [ ] --output-type as (json | module | echo)
 * [ ] DocBlocks // Comments  
 
 ## inspiration

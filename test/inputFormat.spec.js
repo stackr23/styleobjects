@@ -8,7 +8,7 @@ let fs        = require('fs'),
     assert    = require('assert'),
     nativeCSS = require('../dist/index.js').default
 
-describe('Input Formats', function () {
+describe('[Input Formats]', function () {
     context('Accept String', function () {
         it('should get a object without any error', done => {
 

@@ -2,10 +2,10 @@
   "name": "@stackr23/styleobjects",
   "version": "1.3.1",
   "description": "transform style definitions in js objects",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "bash ./build.sh",
-    "test": "mocha ./test/*.spec.* --require @babel/register"
+    "test": "mocha ./test/*.spec.* --require @babel/register --timeout 5000"
   },
   "directories": ["dist", "bin", "utils"],
   "repository": {

@@ -1,3 +1,3 @@
 'use strict'
 
-require('./bin/index.js')
+require('./src/index.js')
