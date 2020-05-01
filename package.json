@@ -5,9 +5,15 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "bash ./build.sh",
-    "test": "mocha ./test/*.spec.* --require @babel/register --timeout 5000"
+    "test": "mocha ./test/*.spec.* --require @babel/register --timeout 5000",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "directories": ["dist", "bin", "utils"],
+  "directories": [
+    "dist",
+    "bin",
+    "utils"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stackr23/styleobjects.git"
@@ -47,6 +53,8 @@
     "chalk": "^2.4.1",
     "css": "2.2.4",
     "fetch": "^1.1.0",
-    "yargs": "^13.2.4"
-  }
+    "yargs": "^13.2.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
